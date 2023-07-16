@@ -6,3 +6,19 @@ h2 {
     color: #1460AA
 }
 
+.navigationBar {
+    background-color: #ffe4c4;
+}
+
+.lawInfo {
+    
+    background-color: #4394e6;
+}
+
+.handheldsArticleFormatting p{
+    font-style: italic;
+}
+
+.mainTitle {
+    color: blueviolet;
+}
