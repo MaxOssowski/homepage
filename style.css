@@ -15,23 +15,6 @@ h2 {
     padding: 16px;
 }
 
-.navigationBar {
-    background-color: #ffe4c4;
-}
-
-.lawInfo {
-    background-color: #4394e6;
-}
-
-.handheldsArticleFormatting p{
-    font-style: italic;
-    padding: 16px;
-}
-
-.mainTitle {
-    color: blueviolet;
-}
-
 section {
     padding: 16px;
 }
@@ -42,5 +25,22 @@ footer {
 
 header {
     padding: 16px;
+}
+
+.navigation-bar {
+    background-color: #ffe4c4;
+}
+
+.site-footer {
+    background-color: #4394e6;
+}
+
+.article__description{
+    font-style: italic;
+    padding: 16px;
+}
+
+.main-title__header {
+    color: blueviolet;
 }
 
