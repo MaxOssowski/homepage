@@ -1,9 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #23f7f1;
 }
 
 h2 {
-    color: #1460AA
+    color: #1460AA;
+    padding: 16px;
 }
 
 .navigationBar {
@@ -11,14 +20,27 @@ h2 {
 }
 
 .lawInfo {
-    
     background-color: #4394e6;
 }
 
 .handheldsArticleFormatting p{
     font-style: italic;
+    padding: 16px;
 }
 
 .mainTitle {
     color: blueviolet;
 }
+
+section {
+    padding: 16px;
+}
+
+footer {
+    padding: 16px;
+}
+
+header {
+    padding: 16px;
+}
+
