@@ -69,6 +69,10 @@ footer {
     background-color: #4394e6;
 }
 
-#rounded-image {
+.rounded-image {
     border-radius: 30px;
+}
+
+.image-sizing {
+    width: 100%;
 }
