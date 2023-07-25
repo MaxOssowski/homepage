@@ -30,6 +30,7 @@ footer {
 .navigation__bar {
     background-color: #ffe4c4;
     padding: 16px;
+    border-radius: 20px 0px 00px 20px;
 }
 
 .navigation__link {
@@ -74,5 +75,5 @@ footer {
 }
 
 .image-sizing {
-    width: 100%;
+    width: 600px;
 }
