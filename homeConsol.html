@@ -10,19 +10,27 @@
 </head>
 
 <body>
-    <header class="navigation-bar">
-		<nav>
-			<a class="navigation-bar__link" href="/index.html">Strona główna</a>
-			<a class="navigation-bar__link" href="/homeConsol.html">Konsole domowe</a>
-			<a class="navigation-bar__link" href="/handhelds.html">Konsole przenośne</a>
+    <header class="navigation">
+		<nav class="navigation__bar">
+			<a class="navigation__link" href="/index.html">Strona główna</a>
+			<a class="navigation__link" href="/homeConsol.html">Konsole domowe</a>
+			<a class="navigation__link" href="/handhelds.html">Konsole przenośne</a>
 		</nav>
 	</header>
-    <main>
+    <main class="main-page">
         <header class="main-title">
-            <h1 class="mainTitle__header">RetroMax</h1>
+            <h1 class="main-title__header">RetroMax</h1>
             <p class="main-title__description">Witaj na stronie poświęconej zbieraniu, naprawianiu i modyfikowaniu retro konsol i nie tylko.</p>
         </header>
-        <img class="article__image" src="/GameCubeSet.jpg" alt="Konsola domowa szóstej generacji - GameCube">
+        <section class="subpage-header">
+            <article class="article">
+                <h2 class="article__title">Konsola Nintendo Gamecube</h2>
+                <p class="article__description">
+					Coś na temat konsoli Gamecube
+                </p>
+                <img class="article__image" id="rounded-image" width="50%" src="/GameCubeSet.jpg" alt="Konsola domowa szóstej generacji - GameCube">
+            </article>
+        </section>
     </main>
 
     <footer class="site-footer">

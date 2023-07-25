@@ -12,7 +12,6 @@ body {
 
 h2 {
     color: #1460AA;
-    padding: 16px;
 }
 
 section {
@@ -23,24 +22,53 @@ footer {
     padding: 16px;
 }
 
-header {
+.navigation {
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+.navigation__bar {
+    background-color: #ffe4c4;
     padding: 16px;
 }
 
-.navigation-bar {
-    background-color: #ffe4c4;
+.navigation__link {
+    color: rgb(104, 0, 0);
+    padding-right: 16px;
+}
+
+.main-page {
+    max-width: 50vw;
+    margin: 0vw 25vw;
+}
+
+.main-title__header {
+    padding: 16px;
+    color: blueviolet;
+}
+
+.main-title__description {
+    padding-left: 16px;
+}
+
+.article {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.article__description{
+    font-style: italic;
+}
+
+.article__image {
+    display: block;
+    margin: auto;
 }
 
 .site-footer {
     background-color: #4394e6;
 }
 
-.article__description{
-    font-style: italic;
-    padding: 16px;
+#rounded-image {
+    border-radius: 30px;
 }
-
-.main-title__header {
-    color: blueviolet;
-}
-
