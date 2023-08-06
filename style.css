@@ -31,6 +31,9 @@ footer {
     background-color: #ffe4c4;
     padding: 16px;
     border-radius: 20px 0px 00px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .navigation__link {
