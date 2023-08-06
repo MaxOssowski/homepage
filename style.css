@@ -52,9 +52,17 @@ footer {
     padding-left: 16px;
 }
 
+.subpage-header__title {
+    margin: 0;
+}
+
 .article {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 20px auto;
+}
+
+.article__title {
+    margin: 0;
 }
 
 .article__description{
