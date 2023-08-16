@@ -11,7 +11,12 @@
 
 <body>
     <header class="navigation">
-        <nav class="navigation__bar">
+        <div class="navigation__menu-bar navigation__menu-bar--js" aria-label="Menu">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+        <nav class="navigation__bar navigation--js">
             <a class="navigation__link" href="/index.html">Strona główna</a>
             <a class="navigation__link" href="/homeConsol.html">Konsole domowe</a>
             <a class="navigation__link" href="/handhelds.html">Konsole przenośne</a>
@@ -57,8 +62,6 @@
 
 </body>
 
-<script>
-    console.log("To jest strona o domowych konsolach!");
-</script>
+<script defer src="/hamburger.js"></script>
 
 </html>
