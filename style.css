@@ -146,34 +146,7 @@ footer {
 }
 
 @media screen and (min-width: 670px) {
-    html {
-        box-sizing: border-box;
-    }
-    
-    *, *:before, *:after {
-        box-sizing: inherit;
-    }
-    
-    body {
-        background-color: #9dd2e3;
-        background-image: -webkit-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-        background-image: -moz-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-        background-image: -o-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-        background-image: linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-        
-    }
-    
-    h2 {
-        color: #1460AA;
-    }
-    
-    section {
-        padding: 16px;
-    }
-    
-    footer {
-        padding: 16px;
-    }
+
     
     .navigation {
         position: static;
@@ -196,18 +169,8 @@ footer {
         flex-direction: row;
         justify-content: center;
         min-height: 57px;
-        gap: 0;
+        gap: 1rem;
         position: static;
-    }
-    
-    .navigation__link {
-        color: rgb(104, 0, 0);
-        padding-right: 16px;
-    }
-    
-    .main-page {
-        max-width: 700px;
-        margin: 0px auto;
     }
     
     .main-title__header {
@@ -216,93 +179,20 @@ footer {
         text-align: center;
     }
     
-    .main-title__description {
-        padding-left: 16px;
-        text-align: center;
-    }
-    
-    .subpage-header__title {
-        margin: 0;
-    }
-    
-    .article {
-        max-width: 800px;
-        margin: 20px auto;
-    }
-    
-    .article__title {
-        padding-bottom: 1rem;
-        margin: 0;
-    }
-    
-    .article__description{
-        font-style: italic;
-        line-height: 1.375rem;
-    }
-    
     .article__image {
         display: block;
         margin: auto;
         max-width: 450px;
     }
 
-    .site-footer {
-        background-color: #4394e6;
-    }
-    
-    .rounded-image {
-        border-radius: 30px;
-    }
-    
-    .image-sizing {
-        width: 600px;
-    }
-
     .grid__frame {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: start;
-        gap: 1rem 1rem;
-        justify-content: center;
-        justify-items: center
     }
 
-    .grid__image {
-        max-width: 300px;
-        background-color: #FFFFFF;
-     }
 }
 
 @media screen and (min-width: 1024px) {
-    html {
-        box-sizing: border-box;
-    }
-    
-    *, *:before, *:after {
-        box-sizing: inherit;
-    }
-    
-    body {
-        background-color: #9dd2e3;
-        background-image: -webkit-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-        background-image: -moz-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-        background-image: -o-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-        background-image: linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-        
-    }
-    
-    h2 {
-        color: #1460AA;
-    }
-    
-    section {
-        padding: 16px;
-    }
-    
-    footer {
-        padding: 16px;
-    }
-    
+
     .navigation {
 
         position: static;
@@ -319,48 +209,8 @@ footer {
         flex-direction: row;
         justify-content: center;
         min-height: 57px;
-        gap: 0;
+        gap: 1rem;
         position: static;
-    }
-    
-    .navigation__link {
-        color: rgb(104, 0, 0);
-        padding-right: 16px;
-    }
-    
-    .main-page {
-        max-width: 700px;
-        margin: 0px auto;
-    }
-    
-    .main-title__header {
-        padding: 16px;
-        color: blueviolet;
-        text-align: center;
-    }
-    
-    .main-title__description {
-        padding-left: 16px;
-        text-align: center;
-    }
-    
-    .subpage-header__title {
-        margin: 0;
-    }
-    
-    .article {
-        max-width: 800px;
-        margin: 20px auto;
-    }
-    
-    .article__title {
-        padding-bottom: 1rem;
-        margin: 0;
-    }
-    
-    .article__description{
-        font-style: italic;
-        line-height: 1.375rem;
     }
 
     .article__image {
@@ -369,18 +219,6 @@ footer {
         max-width: 600px;
     }
 
-    .site-footer {
-        background-color: #4394e6;
-    }
-    
-    .rounded-image {
-        border-radius: 30px;
-    }
-    
-    .image-sizing {
-        width: 600px;
-    }
-    
     .grid__frame {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -390,9 +228,5 @@ footer {
         justify-items: center
     }
 
-    .grid__image {
-        max-width: 300px;
-        background-color: #FFFFFF;
-     }
 }
     
