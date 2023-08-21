@@ -89,6 +89,10 @@ footer {
     text-align: center;
 }
 
+.main-title__header::before {
+    content: "🎮"
+}
+
 .main-title__description {
     padding-left: 16px;
     text-align: center;
@@ -145,7 +149,7 @@ footer {
    background-color: #FFFFFF;
 }
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 768px) {
 
     
     .navigation {
