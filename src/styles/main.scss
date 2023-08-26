@@ -1,4 +1,4 @@
-$textColor: hotpink;
+$headerColor: #1460AA;
 $desktop: 1024px;
 $tablet: 768px;
 
@@ -20,7 +20,7 @@ body {
 }
 
 h2 {
-    color: #1460AA;
+    color: $headerColor
 }
 
 section {
@@ -41,16 +41,81 @@ footer {
     border-radius: 0px 0px 0px 15px;
     display: flex;
     justify-content: flex-end; 
-}
 
-.navigation__menu-bar {
-    width: 45px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    justify-content: center;
+    &__menu-bar {
+        width: 45px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    &__bar {
+        background-color: #ffe4c4;
+        padding: 16px;
+        position: absolute;
+        top: 40px;
+        border-radius: 20px 0px 20px 20px;
+        display: none;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__link {
+        color: rgb(104, 0, 0);
+    }
+
+    &--open {
+        display: flex;
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: static;
+        top: 0px;
+        min-height: 40px;
+        width: 100%;
+        display: block;
+        justify-content: flex-end;
+
+        &__menu-bar {
+            display: none;
+        }
+
+        &__bar {
+            background-color: #ffe4c4;
+            padding: 16px;
+            border-radius: 20px 0px 00px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            min-height: 57px;
+            gap: 1rem;
+            position: static;
+        }
+    }
+        
+    @media screen and (min-width: $desktop) {
+        position: static;
+        top: 0px;
+        min-height: 57px;
+        width: 100%;
+
+        &__bar {
+            background-color: #ffe4c4;
+            padding: 16px;
+            border-radius: 20px 0px 00px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            min-height: 57px;
+            gap: 1rem;
+            position: static;
+        }
+    }
 }
 
 .bar {
@@ -60,72 +125,72 @@ footer {
     border-radius: 5px;
 }
 
-.navigation__bar {
-    background-color: #ffe4c4;
-    padding: 16px;
-    position: absolute;
-    top: 40px;
-    border-radius: 20px 0px 20px 20px;
-    display: none;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    
-}
-
-.navigation__link {
-    color: rgb(104, 0, 0);
-}
-
-.navigation--open {
-    display: flex;
-}
-
 .main-page {
     max-width: 700px;
     margin: 0px auto;
+
+    &__header {
+        padding: 20px 20px 0px 20px;
+        color: blueviolet;
+        text-align: center;
+    }
 }
 
-.main-title__header {
-    padding: 20px 20px 0px 20px;
-    color: blueviolet;
-    text-align: center;
+.main-title {
+    &__header::before {
+        content: "🎮";
+    }
+
+    &__header {
+        padding: 16px;
+        color: blueviolet;
+        text-align: center;
+    }
+
+    &__description {
+        padding-left: 16px;
+        text-align: center;
+    }
 }
 
-.main-title__header::before {
-    content: "🎮"
-}
-
-.main-title__description {
-    padding-left: 16px;
-    text-align: center;
-}
-
-.subpage-header__title {
-    margin: 0;
+.subpage-header {
+    &__title {
+        margin: 0;
+    }
 }
 
 .article {
     max-width: 800px;
     margin: 20px auto;
-}
 
-.article__title {
-    color: $textColor;
-    padding-bottom: 1rem;
-    margin: 0;
-}
+    &__title {
+        color: $headerColor;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
 
-.article__description{
-    font-style: italic;
-    line-height: 1.375rem;
-}
+    &__description {
+        font-style: italic;
+        line-height: 1.375rem;
+    }
 
-.article__image {
-    display: block;
-    margin: auto;
-    max-width: 280px;
+    &__image {
+        display: block;
+        margin: auto;
+        max-width: 280px;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+            margin: auto;
+            max-width: 450px; 
+        }
+
+        @media screen and (min-width: $desktop) {
+            display: block;
+            margin: auto;
+            max-width: 600px;
+        }
+    }
 }
 
 .site-footer {
@@ -140,102 +205,31 @@ footer {
     width: 600px;
 }
 
-.grid__frame {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: start;
-    gap: 1rem 1rem;
-    justify-content: center;
-    justify-items: center
-}
-
-.grid__image {
-   max-width: 300px;
-   background-color: #FFFFFF;
-}
-
-@media screen and (min-width: 768px) {
-
-    
-    .navigation {
-        position: static;
-        top: 0px;
-        min-height: 40px;
-        width: 100%;
-        display: block;
-        justify-content: flex-end;
-    }
-
-    .navigation__menu-bar {
-        display: none;
-    }
-    
-    .navigation__bar {
-        background-color: #ffe4c4;
-        padding: 16px;
-        border-radius: 20px 0px 00px 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        min-height: 57px;
-        gap: 1rem;
-        position: static;
-    }
-    
-    .main-title__header {
-        padding: 16px;
-        color: blueviolet;
-        text-align: center;
-    }
-    
-    .article__image {
-        display: block;
-        margin: auto;
-        max-width: 450px;
-    }
-
-    .grid__frame {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    .navigation {
-
-        position: static;
-        top: 0px;
-        min-height: 57px;
-        width: 100%;
-    }
-    
-    .navigation__bar {
-        background-color: #ffe4c4;
-        padding: 16px;
-        border-radius: 20px 0px 00px 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        min-height: 57px;
-        gap: 1rem;
-        position: static;
-    }
-
-    .article__image {
-        display: block;
-        margin: auto;
-        max-width: 600px;
-    }
-
-    .grid__frame {
+.grid {
+    &__frame {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         align-items: start;
         gap: 1rem 1rem;
         justify-content: center;
-        justify-items: center
+        justify-items: center;
+
+        @media screen and (min-width: $tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (min-width: $desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: start;
+            gap: 1rem 1rem;
+            justify-content: center;
+            justify-items: center
+        }
     }
 
+    &__image {
+        max-width: 300px;
+        background-color: #FFFFFF;
+    }
 }
-    
