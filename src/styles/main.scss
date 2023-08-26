@@ -1,3 +1,8 @@
+$textColor: hotpink;
+$desktop: 1024px;
+$tablet: 768px;
+
+
 html {
     box-sizing: border-box;
 }
@@ -11,8 +16,7 @@ body {
     background-image: -webkit-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
     background-image: -moz-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
     background-image: -o-linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-    background-image: linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%);
-    
+    background-image: linear-gradient(0deg, #9dd2e3 22%, #1fabff 76%); 
 }
 
 h2 {
@@ -108,6 +112,7 @@ footer {
 }
 
 .article__title {
+    color: $textColor;
     padding-bottom: 1rem;
     margin: 0;
 }
