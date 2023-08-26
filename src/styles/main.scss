@@ -86,9 +86,7 @@ footer {
         }
 
         &__bar {
-            background-color: #ffe4c4;
-            padding: 16px;
-            border-radius: 20px 0px 00px 20px;
+            border-radius: 20px 0px 0px 20px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -103,18 +101,6 @@ footer {
         top: 0px;
         min-height: 57px;
         width: 100%;
-
-        &__bar {
-            background-color: #ffe4c4;
-            padding: 16px;
-            border-radius: 20px 0px 00px 20px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            min-height: 57px;
-            gap: 1rem;
-            position: static;
-        }
     }
 }
 
@@ -137,14 +123,16 @@ footer {
 }
 
 .main-title {
-    &__header::before {
-        content: "🎮";
-    }
-
     &__header {
-        padding: 16px;
+        padding: 32px 16px 16px 16px;
         color: blueviolet;
         text-align: center;
+        @media screen and (min-width: $tablet) {
+            padding: 16px;
+        }
+        &::before {
+            content: "🎮";
+        }
     }
 
     &__description {
@@ -180,14 +168,10 @@ footer {
         max-width: 280px;
 
         @media screen and (min-width: $tablet) {
-            display: block;
-            margin: auto;
             max-width: 450px; 
         }
 
         @media screen and (min-width: $desktop) {
-            display: block;
-            margin: auto;
             max-width: 600px;
         }
     }
@@ -219,12 +203,7 @@ footer {
         }
 
         @media screen and (min-width: $desktop) {
-            display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            align-items: start;
-            gap: 1rem 1rem;
-            justify-content: center;
-            justify-items: center
         }
     }
 
