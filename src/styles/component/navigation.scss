@@ -1,0 +1,72 @@
+.navigation {
+    background-color: #ffe4c4;
+    position: fixed;
+    top: 0px;
+    padding-right: 5px;
+    min-height: 40px;
+    width: 100%;
+    border-radius: 0px 0px 0px 15px;
+    display: flex;
+    justify-content: flex-end; 
+
+    &__menu-bar {
+        width: 45px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    &__bar {
+        background-color: #ffe4c4;
+        padding: 16px;
+        position: absolute;
+        top: 40px;
+        border-radius: 20px 0px 20px 20px;
+        display: none;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__link {
+        color: rgb(104, 0, 0);
+    }
+
+    &--open {
+        display: flex;
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: static;
+        top: 0px;
+        min-height: 40px;
+        width: 100%;
+        display: block;
+        justify-content: flex-end;
+
+        &__menu-bar {
+            display: none;
+        }
+
+        &__bar {
+            border-radius: 20px 0px 0px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            min-height: 57px;
+            gap: 1rem;
+            position: static;
+        }
+    }
+        
+    @media screen and (min-width: $desktop) {
+        position: static;
+        top: 0px;
+        min-height: 57px;
+        width: 100%;
+    }
+}
