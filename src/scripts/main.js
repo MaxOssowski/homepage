@@ -1,4 +1,5 @@
 import differenceInDays from "date-fns/differenceInDays"
+import { substractNumbers } from "./calculate"
 
 const header = document.querySelector('.article__popup-text--js')
 
@@ -17,3 +18,5 @@ const resultDays = differenceInDays(
 )
 
 console.log("Days too my birthday: " + resultDays)
+
+console.log("9 - 3 = " + substractNumbers(9, 3));
