@@ -6,7 +6,7 @@ Page is written in polish.
 
 The page is published using Netlify:
 
-www.retromax.netlify.app
+[retromax.netlify.app](https://retromax.netlify.app/)
 
 ## Techstack and tools:
 1. HTML
