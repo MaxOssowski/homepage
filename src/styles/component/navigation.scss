@@ -1,5 +1,5 @@
 .navigation {
-    background-color: #ffe4c4;
+    background-color: #ff9747;
     position: fixed;
     top: 0px;
     padding-right: 5px;
@@ -20,7 +20,7 @@
     }
 
     &__bar {
-        background-color: #ffe4c4;
+        background-color: #ff9747;
         padding: 16px;
         position: absolute;
         top: 40px;
@@ -33,7 +33,9 @@
     }
 
     &__link {
-        color: rgb(104, 0, 0);
+        color: #313131;
+        font-size: 1rem;
+        font-weight: bold;
     }
 
     &--open {
@@ -68,5 +70,15 @@
         top: 0px;
         min-height: 57px;
         width: 100%;
+    }
+
+    @media (hover: hover) {
+        &__link {
+            transition: color 0.3s ease-in-out;
+            will-change: color;
+            &:hover {
+                color: #47ffce;
+            }
+        }
     }
 }

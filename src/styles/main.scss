@@ -7,8 +7,9 @@ $tablet: 768px;
 
 :root {
     --textColor: #313131;
-    --backgroundColor: #4eccdd;
-    --backgroundColorGradient: #e7e7e7;
+    --backgroundColor: #477eff;
+    --backgroundColorGradient: #6e92e6;
+    --barColor: #47ffce;
 
     @media (prefers-color-scheme: dark) {
         --textColor: #e7e7e7;
@@ -48,7 +49,7 @@ footer {
 .bar {
     height: 6px;
     width: 100%;
-    background-color: blueviolet;
+    background-color: var(--barColor);
     border-radius: 5px;
 }
 
@@ -84,11 +85,15 @@ footer {
     &__title {
         margin: 0;
     }
+    &__description {
+        text-align: justify;
+    }
 }
 
 .article {
     max-width: 800px;
     margin: 20px auto;
+    text-align: justify;
 
     &__title {
         padding-bottom: 1rem;
@@ -116,7 +121,8 @@ footer {
 }
 
 .site-footer {
-    background-color: #4394e6;
+    background-color: var(--backgroundColor);
+    border-top: 0.125rem solid #313131;
 }
 
 .rounded-image {
