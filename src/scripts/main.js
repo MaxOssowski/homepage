@@ -29,7 +29,7 @@ console.log("Days too my birthday: " + resultDays)
 console.log("9 - 3 = " + substractNumbers(9, 3));
 
 console.log("Array contains: ");
-for(i = 0; i < newArray.length; i++){
+for(let i = 0; i < newArray.length; i++){
     console.log(newArray[i])
 }
 
