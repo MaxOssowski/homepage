@@ -1,5 +1,5 @@
-const username = "MaxOssowski"
-const repositoriesConteainer = document.querySelector('.repositories--js')
+const username = "MaxOssowski";
+const repositoriesConteainer = document.querySelector('.repositories--js');
 
 fetch(`https://api.github.com/users/${username}/repos`)
 .then(response => response.json())
@@ -10,4 +10,4 @@ fetch(`https://api.github.com/users/${username}/repos`)
         repositoriesConteainer.insertAdjacentHTML('beforeend', element)
     }
 })
-.catch((e) => console.log(e))
+.catch((e) => console.log(e));
