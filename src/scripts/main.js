@@ -11,8 +11,8 @@ function helloFunc(name, age) {
 }
 
 function countArray(myArray) {
-    sum = 0;
-    for(i = 0; i < myArray.length; i++) {
+    let sum = 0;
+    for(let i = 0; i < myArray.length; i++) {
         sum += myArray[i];
     }
     return sum;
